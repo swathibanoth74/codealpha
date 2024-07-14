@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple E-commerce Store</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Conferencing</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Simple E-commerce Store</h1>
-        <a href="/cart" id="cart-link">Cart (0)</a>
-    </header>
+  <div id="app">
+    <div id="video-grid">
+      <video id="local-video" autoplay muted></video>
+      <div id="remote-videos"></div>
+    </div>
+    <div id="controls">
+      <button id="start-call">Start Call</button>
+      <button id="share-screen">Share Screen</button>
+      <input type="file" id="file-input">
+    </div>
+    <canvas id="whiteboard"></canvas>
+  </div>
 
-    <main id="product-list">
-        <!-- Product listings will be dynamically added here -->
-    </main>
-
-    <script src="script.js"></script>
+  <script src="client.js"></script>
 </body>
 </html>
